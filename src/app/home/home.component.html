@@ -27,124 +27,17 @@
   </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <h2 class="text-center mb-5">About Me</h2>
-        <div class="mb-4" *ngFor="let paragraph of profile.about; let i = index">
-          <p class="lead text-muted mb-4" style="text-align: justify; line-height: 1.8;">
-            {{ paragraph }}
-          </p>
-          <hr *ngIf="i < profile.about.length - 1" class="my-4 opacity-25">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- About Component -->
+<app-about [about]="profile.about"></app-about>
 
-<!-- Skills Section -->
-<section id="skills" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Technical Skills</h2>
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <div class="row">
-          <div class="col-md-4 mb-4" *ngFor="let skillCategory of profile.skills">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-secondary">{{ skillCategory.category }}</h5>
-                <div class="d-flex flex-wrap gap-2">
-                  <span 
-                    *ngFor="let skill of skillCategory.items" 
-                    class="badge bg-secondary">{{ skill }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Technical Skills Component -->
+<app-technical-skills [skills]="profile.skills"></app-technical-skills>
 
-<!-- Experience Section -->
-<section id="experience" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Experience</h2>
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <div class="timeline">
-          <div class="card mb-4 shadow-sm" *ngFor="let exp of profile.experience">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div>
-                  <h5 class="card-title mb-1">{{ exp.position }}</h5>
-                  <h6 class="text-secondary mb-0">{{ exp.company }}</h6>
-                </div>
-                <span class="badge bg-primary">{{ exp.duration }}</span>
-              </div>
-              <p class="card-text">{{ exp.description }}</p>
-              <div class="d-flex flex-wrap gap-2">
-                <span *ngFor="let tech of exp.technologies" 
-                      class="badge bg-light text-dark border">{{ tech }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Experience Component -->
+<app-experience [experience]="profile.experience"></app-experience>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-5">Portfolio</h2>
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4" *ngFor="let project of projects">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title d-flex align-items-center gap-2">
-                  {{ project.name }}
-                  <a *ngIf="project.url" 
-                     [href]="project.url" 
-                     target="_blank" 
-                     class="text-decoration-none"
-                     style="color: inherit; transition: color 0.3s ease;"
-                     onmouseover="this.style.color='#007bff'"
-                     onmouseout="this.style.color='inherit'"
-                     title="Live Demo">
-                    <i class="fas fa-external-link-alt fa-xs"></i>
-                  </a>
-                </h5>
-                <p class="card-text text-muted mb-3" *ngIf="project.description">{{ project.description }}</p>
-                <div class="d-flex flex-wrap gap-2 mb-3">
-                  <span *ngFor="let tech of project.technologies" 
-                        class="badge bg-secondary">{{ tech }}</span>
-                </div>
-                <div class="mt-auto">
-                  <div class="d-flex gap-2 flex-wrap">
-                    <a *ngIf="project.githubUrl" 
-                       [href]="project.githubUrl" 
-                       target="_blank" 
-                       class="btn btn-outline-dark btn-sm">
-                      <i class="fab fa-github me-2"></i>GitHub
-                    </a>
-                    <span *ngIf="!project.url && !project.githubUrl" class="text-muted small">Internal Project</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Portfolio Component -->
+<app-portfolio [projects]="projects"></app-portfolio>
 
 <!-- Education Section -->
 <section class="py-5">

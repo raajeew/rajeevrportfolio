@@ -1,0 +1,282 @@
+[
+  {
+     "id": 1,
+    "name": "Rajeev Ranjan Portfolio",
+    "url": "http://rajeevr.com/",
+    "technologies": [
+      "Angular 18",
+      "SCSS",
+      "Bootstrap 5",
+        "TypeScript",
+        "NPM"
+    ],
+    "githubUrl": "https://github.com/raajeew/rajeevrportfolio"
+  },
+  {
+    "id": 2,
+    "name": "AIOps - Service Monitoring",
+    "url": null,
+    "technologies": [
+      "React 18",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "React Router v6",
+      "Mock JSON"
+    ],
+    "githubUrl": "https://github.com/raajeew/aiops-react-redux"
+  },
+  {
+    "id": 3,
+    "name": "Cloud Cost Analytics",
+    "url": null,
+    "technologies": [
+      "Angular 8",
+      "CSS3",
+      "Angular Material 8",
+      "Google Charts",
+      "REST API"
+    ],
+    "githubUrl": "https://github.com/raajeew/costanalytics"
+  },
+  {
+    "id": 9,
+    "name": "VueJS Portfolio Site",
+    "url": null,
+    "technologies": [
+      "vue.js",
+      "HTML",
+      "CSS3"
+    ],
+    "githubUrl": "https://github.com/raajeew/vuejs-portfolio-site"
+  },
+  {
+    "id": 4,
+    "name": "Kuliza",
+    "url": null,
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 5,
+    "name": "Batcon",
+    "url": null,
+    "technologies": [
+      "Joomla"
+    ],
+    "githubUrl": ""
+  },
+  {
+    "id": 6,
+    "name": "Nickerson Law Group",
+    "url": null,
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "jQuery"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 7,
+    "name": "Bright House",
+    "url": "http://demo.rajeevr.com/brighthouse/",
+    "technologies": [
+      "HTML",
+      "CSS3",
+      "jQuery",
+      "Photoshop"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 8,
+    "name": "Attivio",
+    "url": null,
+    "technologies": [
+      "Joomla"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 10,
+    "name": "Farm Trust",
+    "url": null,
+    "technologies": [
+      "Angular 12",
+      "Material UI",
+      "REST API",
+      "SCSS"
+    ],
+    "githubUrl": "https://github.com/raajeew/farmtrust"
+  },
+  {
+    "id": 11,
+    "name": "Agence Talent",
+    "url": null,
+    "technologies": [
+      "Wordpress",
+      "HTML",
+      "CSS",
+      "jQuery"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 12,
+    "name": "Essaysunday",
+    "url": null,
+    "technologies": [
+      "xHTML",
+      "CSS",
+      "CSS3",
+      "jQuery",
+      "Photoshop"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 13,
+    "name": "XScire Technologies",
+    "url": null,
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "jQuery",
+      "Photoshop"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 14,
+    "name": "Ivy League English, China",
+    "url": "http://www.ile-china.com/v5/index.php/en/",
+    "technologies": [
+      "Joomla",
+      "HTML5",
+      "CSS",
+      "CSS3",
+      "jQuery"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 15,
+    "name": "Barbatelli's Signature Interior",
+    "url": null,
+    "technologies": [
+      "Wordpress",
+      "Responsive UI",
+      "HTML/CSS",
+      "jQuery",
+      "Photoshop"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 16,
+    "name": "AZTech Consulting",
+    "url": null,
+    "technologies": [
+      "Wordpress",
+      "Responsive",
+      "HTML5",
+      "CSS3",
+      "jQuery",
+      "Photoshop"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 17,
+    "name": "Sapthagiri College of Engineering",
+    "url": "http://www.sapthagiri.edu.in/",
+    "technologies": [
+      "Joomla 3",
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "jQuery",
+      "Responsive"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 18,
+    "name": "CANOE VENTURES, LLC",
+    "url": null,
+    "technologies": [
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "jQuery",
+      "Responsive"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 19,
+    "name": "G-Intern",
+    "url": "http://g-internship.jp/",
+    "technologies": [
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "Responsive",
+      "jQuery"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 20,
+    "name": "Rajeev's Profile Site",
+    "url": "http://reactjs.rajeevr.com/",
+    "technologies": [
+      "ReactJs",
+      "Bootstrap",
+      "REST API"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 21,
+    "name": "ILE App Dashboard",
+    "url": "http://demo.rajeevr.com/ile-new/",
+    "technologies": [
+      "Bootstrap",
+      "Responsive",
+      "jQuery",
+      "JSON"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 22,
+    "name": "Nuron.io",
+    "url": "http://nuron.rajeevr.com/app/",
+    "technologies": [
+      "Angular 2",
+      "Angular Material Design",
+      "Bootstrap"
+    ],
+    "githubUrl": null
+  },
+  {
+    "id": 23,
+    "name": "AskDisha ChatBot",
+    "url": null,
+    "technologies": [
+      "Artificial Intelligence",
+      "Chatbot",
+      "LLM",
+      "NLP"
+    ],
+    "githubUrl": null,
+    "description": null
+  }
+]
