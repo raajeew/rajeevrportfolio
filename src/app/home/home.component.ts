@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   profile: any = {};
+  projects: any[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -19,15 +20,9 @@ export class HomeComponent implements OnInit {
     this.http.get<any>('assets/data/home.json').subscribe(data => {
       this.profile = data;
     });
-  }
 
-  scrollToAbout() {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
+    this.http.get<any[]>('assets/data/projects.json').subscribe(data => {
+      this.projects = data;
+    });
   }
 }

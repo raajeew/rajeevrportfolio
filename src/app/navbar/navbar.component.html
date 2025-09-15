@@ -9,9 +9,18 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="closeNavbar()">Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="closeNavbar()">Portfolio</a>
-        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('about')" style="cursor: pointer;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('skills')" style="cursor: pointer;">Technical Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('experience')" style="cursor: pointer;">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('portfolio')" style="cursor: pointer;">Portfolio</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
         </li>
