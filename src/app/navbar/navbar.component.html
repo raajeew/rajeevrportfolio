@@ -10,16 +10,28 @@
           <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="closeNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('about')" style="cursor: pointer;">About</a>
+          <a class="nav-link" 
+             [class.active]="isActive('about')" 
+             (click)="scrollToSection('about')" 
+             style="cursor: pointer;">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('skills')" style="cursor: pointer;">Technical Skills</a>
+          <a class="nav-link" 
+             [class.active]="isActive('skills')" 
+             (click)="scrollToSection('skills')" 
+             style="cursor: pointer;">Technical Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('experience')" style="cursor: pointer;">Experience</a>
+          <a class="nav-link" 
+             [class.active]="isActive('experience')" 
+             (click)="scrollToSection('experience')" 
+             style="cursor: pointer;">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('portfolio')" style="cursor: pointer;">Portfolio</a>
+          <a class="nav-link" 
+             [class.active]="isActive('portfolio')" 
+             (click)="scrollToSection('portfolio')" 
+             style="cursor: pointer;">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
