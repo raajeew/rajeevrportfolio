@@ -28,86 +28,16 @@
 </section>
 
 <!-- About Component -->
-<div id="about">
-  <app-about *ngIf="shouldLoadAbout()" [about]="profile.about"></app-about>
-  <div *ngIf="!shouldLoadAbout()" class="py-5" style="min-height: 400px;">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-        <div class="text-center">
-          <div class="spinner-border text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="mt-3 text-muted">Loading About section...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-about [about]="profile.about"></app-about>
 
 <!-- Technical Skills Component -->
-<div id="skills">
-  <app-technical-skills *ngIf="shouldLoadSkills()" [skills]="profile.skills"></app-technical-skills>
-  <div *ngIf="!shouldLoadSkills()" class="py-5 bg-light" style="min-height: 400px;">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-        <div class="text-center">
-          <div class="spinner-border text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="mt-3 text-muted">Loading Technical Skills section...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-technical-skills [skills]="profile.skills"></app-technical-skills>
 
 <!-- Experience Component -->
-<div id="experience">
-  <app-experience *ngIf="shouldLoadExperience()" [experience]="profile.experience"></app-experience>
-  <div *ngIf="!shouldLoadExperience()" class="py-5" style="min-height: 400px;">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-        <div class="text-center">
-          <div class="spinner-border text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="mt-3 text-muted">Loading Experience section...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-experience [experience]="profile.experience"></app-experience>
 
 <!-- Portfolio Component -->
-<div id="portfolio">
-  <app-portfolio *ngIf="shouldLoadPortfolio()" [projects]="projects"></app-portfolio>
-  <div *ngIf="!shouldLoadPortfolio()" class="py-5 bg-light" style="min-height: 400px;">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-        <div class="text-center">
-          <div class="spinner-border text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="mt-3 text-muted">Loading Portfolio section...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-portfolio [projects]="projects"></app-portfolio>
 
 <!-- Education Component -->
-<div id="education">
-  <app-education *ngIf="shouldLoadEducation()" [education]="profile.education"></app-education>
-  <div *ngIf="!shouldLoadEducation()" class="py-5" style="min-height: 400px;">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-        <div class="text-center">
-          <div class="spinner-border text-secondary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="mt-3 text-muted">Loading Education section...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-education [education]="profile.education"></app-education>
