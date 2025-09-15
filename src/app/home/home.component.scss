@@ -1,0 +1,107 @@
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding-top: 80px; // Account for fixed navbar
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid rgba(0, 123, 255, 0.2);
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+  color: white;
+  
+  &:hover {
+    background-color: #5a359a;
+    border-color: #5a359a;
+    color: white;
+  }
+  
+  &:focus, &:active {
+    background-color: #5a359a;
+    border-color: #5a359a;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.5);
+  }
+}
+
+.btn-outline-purple {
+  color: #6f42c1;
+  border-color: #6f42c1;
+  background-color: transparent;
+  
+  &:hover {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+  }
+  
+  &:focus, &:active {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.5);
+  }
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-image {
+  animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}

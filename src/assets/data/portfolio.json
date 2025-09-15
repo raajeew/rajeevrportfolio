@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "E-commerce",
+    "technologies": ["Angular", "Node.js", "MongoDB", "Stripe API"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 2,
+    "title": "Task Management Dashboard",
+    "description": "A comprehensive dashboard for project management with real-time collaboration, task tracking, and analytics.",
+    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Dashboard",
+    "technologies": ["React", "TypeScript", "Firebase", "Material-UI"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 3,
+    "title": "Weather App",
+    "description": "A responsive weather application with location-based forecasts, interactive maps, and weather alerts.",
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Web App",
+    "technologies": ["Vue.js", "OpenWeather API", "CSS3", "PWA"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 4,
+    "title": "Restaurant Ordering System",
+    "description": "A modern restaurant ordering system with menu management, order tracking, and payment processing.",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "E-commerce",
+    "technologies": ["Angular", "Express.js", "PostgreSQL", "PayPal API"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 5,
+    "title": "Fitness Tracker Mobile App",
+    "description": "A cross-platform mobile app for tracking fitness activities, setting goals, and monitoring progress.",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Mobile App",
+    "technologies": ["React Native", "Redux", "SQLite", "Health APIs"],
+    "liveUrl": null,
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 6,
+    "title": "Social Media Analytics",
+    "description": "A powerful analytics dashboard for social media metrics with data visualization and reporting features.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Dashboard",
+    "technologies": ["React", "D3.js", "Node.js", "Chart.js"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 7,
+    "title": "Portfolio Website",
+    "description": "A responsive portfolio website showcasing projects and skills with modern design and smooth animations.",
+    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Web App",
+    "technologies": ["Angular", "Bootstrap", "SCSS", "TypeScript"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 8,
+    "title": "Inventory Management",
+    "description": "A comprehensive inventory management system for small businesses with stock tracking and reporting.",
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Dashboard",
+    "technologies": ["Vue.js", "Laravel", "MySQL", "Bootstrap"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/example"
+  },
+  {
+    "id": 9,
+    "title": "Food Delivery App",
+    "description": "A mobile application for food delivery with real-time tracking, multiple payment options, and user reviews.",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    "category": "Mobile App",
+    "technologies": ["Flutter", "Firebase", "Google Maps API", "Stripe"],
+    "liveUrl": null,
+    "githubUrl": "https://github.com/example"
+  }
+]

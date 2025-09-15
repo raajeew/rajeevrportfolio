@@ -1,0 +1,80 @@
+{
+  "name": "Rajeev Ranjan",
+  "title": "Seasoned Front-End Developer with UI Architecture Expertise",
+  "summary": "An accomplished Principal Product Developer with 18 years of experience specializing in frontend development and architecture. I've led the design and implementation of robust and scalable user interfaces, consistently delivering high-quality, impactful digital products. My expertise spans the entire development lifecycle, from initial concept to deployment and maintenance.",
+  "about": [
+    "Seasoned Front-End Developer with UI Architecture Expertise having 18 years of experience specializing in frontend development and software architecture. Proven expertise in designing and delivering scalable, high-performance user interfaces that blend technical excellence with customer-centric design.",
+    "Throughout my career, I've led complex projects from concept to deployment, driving architecture decisions, performance optimization, and adoption of modern frameworks. My strength lies in translating business needs into robust frontend solutions, mentoring development teams, and setting technical direction to ensure sustainable, future-ready platforms.",
+    "Passionate about UI/UX excellence, clean architecture, and emerging web technologies, I thrive at the intersection of product innovation and technical leadership. I take pride in shaping engineering practices, fostering collaboration, and delivering impactful digital experiences that align with strategic business goals."
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["Angular", "React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Bootstrap", "Tailwind CSS", "Material UI"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express.js", "Python", "Django", "REST APIs", "GraphQL", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "category": "Tools & Others",
+      "items": ["Github Copilot","Cursor AI", "Vibe Coding", "Git", "Docker", "AWS", "Firebase", "Webpack", "Figma"]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Principal Product Developer",
+      "company": "BMC Software",
+      "duration": "2021 - Present",
+      "description": "Designe and develop reusable UI components for the AIOps – Service Monitoring application, enhancing scalability and consistency across the platform. Collaborate with product managers, UX designers, and backend teams to ensure technical solutions aligned with business objectives. Establish and enforce front-end best practices, including coding standards, accessibility compliance, and performance optimization. Actively contribute to Agile/Scrum processes by facilitating sprint planning, standups, and retrospectives to ensure timely and efficient delivery.",
+      "technologies": ["Angular 18", "TypeScript", "SCSS", "RxJS", "NgRx", "NodeJS", "Grafana", "Figma"]
+    },
+    {
+      "position": "Principal Product Developer",
+      "company": "Hitachi Vantara",
+      "duration": "2018 - 2021",
+      "description": "Developed web applications such as AIOps and Cloud Cost Optimization using Angular. Collaborated closely with product managers, UX designers, and backend engineers to ensure UI development aligned with business goals. Actively engaged with stakeholders to gather requirements and provide regular updates. Led the planning, execution, and delivery of UI features, maintaining high standards for quality and meeting project timelines.",
+      "technologies": ["Angular", "ReactJs", "NextJs", "Node.js", "AWS"]
+    },
+    {
+      "position": "Lead Engineer",
+      "company": "Altisource Labs",
+      "duration": "2013 - 2018",
+      "description": "Led the development of the LendersOne marketplace project, delivering responsive and cross-browser compatible web solutions. Designed and implemented new modules using AngularJS, Bootstrap, HTML5, CSS3, and jQuery. Ensured seamless support across all major mobile devices, including iOS and Android platforms. Focused on performance optimization by streamlining HTML, CSS, and JavaScript for faster application load times.",
+      "technologies": ["Angular", "AngularJS", "JavaScript","jQuery","TypeScript", "CSS3", "Bootstrap", "Git"]
+    },
+    {
+      "position": "Sr. UI Engineer",
+      "company": "Wolters Kluwer Financial & Compliance Services Software Private Limited",
+      "duration": "2012 - 2013",
+      "description": "Built responsive websites and web applications. Focused on frontend development with modern JavaScript frameworks.",
+      "technologies": ["HTML5", "CSS3", "JavaScript","jQuery", "Bootstrap", "Git"]
+    },
+    {
+      "position": "Senior Software Developer",
+      "company": "Kuliza Technologies",
+      "duration": "2008 - 2012",
+      "description": "Built responsive websites and web applications using different frameworks like Joomla, Wordpress and Django. Focused on frontend development with modern JavaScript frameworks.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Joomla", "WordPress", "Django"]
+    },
+    {
+      "position": "Web Developer",
+      "company": "ADDR Technologies",
+      "duration": "2007 - 2008",
+      "description": "Develop pixel perfect web pages using CSS and HTML. Convert PSD designs into functional HTML layouts. Ensure cross-browser compatibility for consistent user experience. Build interactive features using jQuery. Collaborate with designers and backend developers to integrate front-end components. Optimize web pages for performance and fast loading times.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "jQuery","Photoshop"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications",
+      "institution": "Indira Gandhi National Open University",
+      "year": "2003 - 2006"
+    },
+    {
+      "degree": "Bachelor of Computer Applications",
+      "institution": "Indira Gandhi National Open University",
+      "year": "2001 - 2003"
+    }
+  ]
+}

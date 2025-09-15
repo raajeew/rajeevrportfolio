@@ -1,0 +1,172 @@
+<div class="contact-section">
+  <div class="container">
+    <!-- Header -->
+    <div class="row">
+      <div class="col-12">
+        <div class="contact-header text-center py-5 mt-5">
+          <h1 class="display-4 fw-bold mb-3">Get In Touch</h1>
+          <p class="lead">I'd love to hear from you. Send me a message and I'll respond as soon as possible.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Contact Information -->
+      <div class="col-lg-4 mb-5">
+        <div class="contact-info">
+          <h3 class="mb-4">Contact Information</h3>
+          
+          <div class="contact-item mb-4">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Email</h5>
+              <p class="text-muted mb-0">{{ contactInfo.email }}</p>
+            </div>
+          </div>
+
+          <div class="contact-item mb-4">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Phone</h5>
+              <p class="text-muted mb-0">{{ contactInfo.phone }}</p>
+            </div>
+          </div>
+
+          <div class="contact-item mb-4">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Location</h5>
+              <p class="text-muted mb-0">{{ contactInfo.location }}</p>
+            </div>
+          </div>
+
+          <div class="social-links mt-4">
+            <h5 class="mb-3">Follow Me</h5>
+            <div class="d-flex gap-3">
+              <a *ngFor="let social of socialLinks" 
+                 [href]="social.url" 
+                 target="_blank" 
+                 class="social-link {{social.class}}"
+                 [title]="social.name">
+                <i [class]="social.icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="contact-form-container">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">First Name *</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="firstName"
+                  formControlName="firstName"
+                  [class.is-invalid]="isFieldInvalid('firstName')">
+                <div class="invalid-feedback">
+                  First name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Last Name *</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="lastName"
+                  formControlName="lastName"
+                  [class.is-invalid]="isFieldInvalid('lastName')">
+                <div class="invalid-feedback">
+                  Last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email"
+                  formControlName="email"
+                  [class.is-invalid]="isFieldInvalid('email')">
+                <div class="invalid-feedback">
+                  <span *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</span>
+                  <span *ngIf="contactForm.get('email')?.errors?.['email']">Please enter a valid email address.</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  id="phone"
+                  formControlName="phone">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject *</label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="subject"
+                formControlName="subject"
+                [class.is-invalid]="isFieldInvalid('subject')">
+              <div class="invalid-feedback">
+                Subject is required.
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label">Message *</label>
+              <textarea 
+                class="form-control" 
+                id="message" 
+                rows="6"
+                formControlName="message"
+                [class.is-invalid]="isFieldInvalid('message')"
+                placeholder="Tell me about your project or how I can help you..."></textarea>
+              <div class="invalid-feedback">
+                Message is required.
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button 
+                type="submit" 
+                class="btn btn-purple btn-lg px-5"
+                [disabled]="isSubmitting">
+                <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm me-2"></span>
+                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+              </button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div *ngIf="showSuccessMessage" class="alert alert-success mt-4" role="alert">
+            <i class="fas fa-check-circle me-2"></i>
+            Thank you for your message! I'll get back to you soon.
+          </div>
+
+          <!-- Error Message -->
+          <div *ngIf="showErrorMessage" class="alert alert-danger mt-4" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            Something went wrong. Please try again later.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

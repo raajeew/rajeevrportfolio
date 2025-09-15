@@ -1,0 +1,122 @@
+<!-- Hero Section -->
+<section class="hero-section bg-light text-dark">
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <h1 class="display-4 fw-bold mb-3">{{ profile.name }}</h1>
+          <h2 class="h3 mb-4 text-muted">{{ profile.title }}</h2>
+          <p class="lead mb-4">{{ profile.summary }}</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button (click)="scrollToAbout()" class="btn btn-purple btn-lg">Learn More</button>
+            <a routerLink="/contact" class="btn btn-outline-purple btn-lg">Get In Touch</a>
+            <a href="assets/Rajeev_Ranjan.pdf" download="Rajeev_Ranjan_Resume.pdf" class="btn btn-success btn-lg">
+              <i class="fas fa-download me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="hero-image">
+          <img src="assets/rajeevr.jpg" 
+               alt="{{ profile.name }}" 
+               class="img-fluid rounded-circle shadow-lg profile-image"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="mb-4" *ngFor="let paragraph of profile.about; let i = index">
+          <p class="lead text-muted mb-4" style="text-align: justify; line-height: 1.8;">
+            {{ paragraph }}
+          </p>
+          <hr *ngIf="i < profile.about.length - 1" class="my-4 opacity-25">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Technical Skills</h2>
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <div class="row">
+          <div class="col-md-4 mb-4" *ngFor="let skillCategory of profile.skills">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-secondary">{{ skillCategory.category }}</h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span 
+                    *ngFor="let skill of skillCategory.items" 
+                    class="badge bg-secondary">{{ skill }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Experience</h2>
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <div class="timeline">
+          <div class="card mb-4 shadow-sm" *ngFor="let exp of profile.experience">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h5 class="card-title mb-1">{{ exp.position }}</h5>
+                  <h6 class="text-secondary mb-0">{{ exp.company }}</h6>
+                </div>
+                <span class="badge bg-primary">{{ exp.duration }}</span>
+              </div>
+              <p class="card-text">{{ exp.description }}</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span *ngFor="let tech of exp.technologies" 
+                      class="badge bg-light text-dark border">{{ tech }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Education</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="card mb-4 shadow-sm" *ngFor="let edu of profile.education">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="card-title">{{ edu.degree }}</h5>
+                <h6 class="text-secondary">{{ edu.institution }}</h6>
+                <p class="text-muted mb-0">{{ edu.year }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

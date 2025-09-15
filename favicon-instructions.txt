@@ -1,0 +1,17 @@
+<!-- This is a placeholder. You need to replace public/favicon.ico with a favicon created from your rajeevr.jpg image -->
+
+To create a proper favicon from your profile image (rajeevr.jpg):
+
+1. Use an online favicon generator like:
+   - https://favicon.io/favicon-converter/
+   - https://realfavicongenerator.net/
+   - https://www.favicon-generator.org/
+
+2. Upload your rajeevr.jpg file
+3. Download the generated favicon.ico
+4. Replace the existing public/favicon.ico with the new one
+
+The favicon should be:
+- 16x16 or 32x32 pixels
+- ICO format for best browser compatibility
+- Simple and recognizable at small sizes

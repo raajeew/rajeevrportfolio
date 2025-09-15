@@ -1,0 +1,27 @@
+{
+  "contactInfo": {
+    "email": "rajeev@rajeevr.com",
+    "phone": "+91-9844789452",
+    "location": "Bangalore, India"
+  },
+  "socialLinks": [
+    { 
+      "name": "LinkedIn", 
+      "icon": "fab fa-linkedin-in", 
+      "url": "https://www.linkedin.com/in/find-rajeev/",
+      "class": "linkedin"
+    },
+    { 
+      "name": "GitHub", 
+      "icon": "fab fa-github", 
+      "url": "https://github.com/raajeew",
+      "class": "github"
+    },
+    { 
+      "name": "Email", 
+      "icon": "fas fa-envelope", 
+      "url": "mailto:rajeev@rajeevr.com",
+      "class": "email"
+    }
+  ]
+}

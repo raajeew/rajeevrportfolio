@@ -1,0 +1,16 @@
+// Main app component styles
+.main {
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+// Ensure smooth scrolling and proper layout
+html, body {
+  height: 100%;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
