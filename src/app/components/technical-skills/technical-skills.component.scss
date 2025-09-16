@@ -1,1 +1,103 @@
 // Technical Skills component styles
+
+.skills-section {
+  background-color: var(--theme-bg-secondary);
+}
+
+.skills-title {
+  color: var(--theme-text-primary);
+}
+
+.skill-category-title {
+  color: var(--theme-text-secondary);
+  font-weight: 600;
+}
+
+.skill-item {
+  .skill-name {
+    color: var(--theme-text-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  
+  .skill-level-text {
+    color: var(--theme-text-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+.skill-progress {
+  height: 8px;
+  background-color: var(--theme-border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  
+  .skill-progress-bar {
+    background: linear-gradient(90deg, var(--purple-color) 0%, #8e44ad 100%);
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out, box-shadow 0.3s ease;
+    position: relative;
+    animation: slideIn 2s ease-out;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      animation: shimmer 2s infinite;
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0% !important;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.skill-item:hover {
+  .skill-progress-bar {
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.4);
+    
+    &::after {
+      animation-duration: 1s;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .skill-category-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .skill-item {
+    margin-bottom: 1rem !important;
+    
+    .skill-name {
+      font-size: 0.85rem;
+    }
+    
+    .skill-level-text {
+      font-size: 0.75rem;
+    }
+  }
+  
+  .skill-progress {
+    height: 6px;
+  }
+}

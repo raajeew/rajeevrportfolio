@@ -1,7 +1,12 @@
 .hero-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--theme-bg-secondary) 0%, var(--theme-bg-primary) 100%);
   padding-top: 80px; // Account for fixed navbar
-  border-bottom: 3px solid #f2f2f2;
+  border-bottom: 3px solid var(--theme-border-color);
+  color: var(--theme-text-primary);
+}
+
+.hero-subtitle {
+  color: var(--theme-text-secondary);
 }
 
 .profile-image {
@@ -58,7 +63,7 @@
 
 .timeline .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 8px 25px var(--theme-shadow-lg) !important;
 }
 
 .hero-content {

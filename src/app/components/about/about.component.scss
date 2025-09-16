@@ -1,1 +1,14 @@
 // About component styles
+
+.about-text {
+  color: var(--theme-text-secondary);
+}
+
+.about-divider {
+  border-color: var(--theme-border-color);
+  opacity: 0.25;
+}
+
+h2 {
+  color: var(--theme-text-primary);
+}

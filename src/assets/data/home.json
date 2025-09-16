@@ -10,15 +10,45 @@
   "skills": [
     {
       "category": "Frontend",
-      "items": ["Angular", "React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Bootstrap", "Tailwind CSS", "Material UI"]
+      "items": [
+        { "name": "Angular", "level": 9 },
+        { "name": "React", "level": 8 },
+        { "name": "Vue.js", "level": 7 },
+        { "name": "TypeScript", "level": 9 },
+        { "name": "JavaScript", "level": 10 },
+        { "name": "HTML5", "level": 10 },
+        { "name": "CSS3", "level": 9 },
+        { "name": "SCSS", "level": 9 },
+        { "name": "Bootstrap", "level": 8 },
+        { "name": "Tailwind CSS", "level": 7 },
+        { "name": "Material UI", "level": 8 }
+      ]
     },
     {
       "category": "Backend",
-      "items": ["Node.js", "Express.js", "Python", "Django", "REST APIs", "GraphQL", "MongoDB", "PostgreSQL"]
+      "items": [
+        { "name": "Node.js", "level": 7 },
+        { "name": "Express.js", "level": 6 },
+        { "name": "Python", "level": 5 },
+        { "name": "Django", "level": 4 },
+        { "name": "REST APIs", "level": 6 },
+        { "name": "GraphQL", "level": 5 },
+        { "name": "MongoDB", "level": 5 }      
+      ]
     },
     {
       "category": "Tools & Others",
-      "items": ["Github Copilot","Cursor AI", "Vibe Coding", "Git", "Docker", "AWS", "Firebase", "Webpack", "Figma"]
+      "items": [
+        { "name": "Github Copilot", "level": 9 },
+        { "name": "Cursor AI", "level": 8 },
+        { "name": "Vibe Coding", "level": 7 },
+        { "name": "Git", "level": 9 },
+        { "name": "Docker", "level": 6 },
+        { "name": "AWS", "level": 7 },
+        { "name": "Firebase", "level": 8 },
+        { "name": "Webpack", "level": 7 },
+        { "name": "Figma", "level": 8 }
+      ]
     }
   ],
   "experience": [
@@ -63,6 +93,13 @@
       "duration": "2007 - 2008",
       "description": "Develop pixel perfect web pages using CSS and HTML. Convert PSD designs into functional HTML layouts. Ensure cross-browser compatibility for consistent user experience. Build interactive features using jQuery. Collaborate with designers and backend developers to integrate front-end components. Optimize web pages for performance and fast loading times.",
       "technologies": ["HTML5", "CSS3", "JavaScript", "jQuery","Photoshop"]
+    },
+    {
+      "position": "Associate",
+      "company": "Macmillan Publisher",
+      "duration": "2006 - 2007",
+      "description": "Converted Word documents to PDF using XML workflows. Published and updated web pages for digital content delivery",
+      "technologies": ["HTML", "XML", "CSS", "JavaScript"]
     }
   ],
   "education": [

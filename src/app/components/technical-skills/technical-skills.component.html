@@ -1,18 +1,33 @@
 <!-- Skills Section -->
-<section id="skills" class="py-5 bg-light">
+<section id="skills" class="py-5 skills-section">
   <div class="container">
-    <h2 class="text-center mb-5">Technical Skills</h2>
+    <h2 class="text-center mb-5 skills-title">Technical Skills</h2>
     <div class="row">
       <div class="col-lg-12 mx-auto">
         <div class="row">
           <div class="col-md-4 mb-4" *ngFor="let skillCategory of skills">
             <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-secondary">{{ skillCategory.category }}</h5>
-                <div class="d-flex flex-wrap gap-2">
-                  <span 
+                <h5 class="card-title skill-category-title mb-4">{{ skillCategory.category }}</h5>
+                <div class="skills-list">
+                  <div 
                     *ngFor="let skill of skillCategory.items" 
-                    class="badge bg-secondary">{{ skill }}</span>
+                    class="skill-item mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                      <span class="skill-name">{{ skill.name }}</span>
+                      <span class="skill-level-text">{{ skill.level }}/10</span>
+                    </div>
+                    <div class="progress skill-progress">
+                      <div 
+                        class="progress-bar skill-progress-bar" 
+                        role="progressbar" 
+                        [style.width.%]="skill.level * 10"
+                        [attr.aria-valuenow]="skill.level"
+                        aria-valuemin="0" 
+                        aria-valuemax="10">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

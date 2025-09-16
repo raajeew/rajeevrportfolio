@@ -1,0 +1,15 @@
+<button 
+  type="button" 
+  class="btn btn-outline-secondary theme-toggle-btn" 
+  (click)="toggleTheme()"
+  [attr.aria-label]="'Switch to ' + (isDarkTheme ? 'light' : 'dark') + ' theme'"
+  title="Toggle theme">
+  <i 
+    class="fas" 
+    [class.fa-moon]="isLightTheme" 
+    [class.fa-sun]="isDarkTheme">
+  </i>
+  <span class="theme-text ms-2 d-none d-sm-inline">
+    {{ isDarkTheme ? 'Light' : 'Dark' }}
+  </span>
+</button>

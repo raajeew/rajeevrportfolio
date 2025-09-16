@@ -1,9 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+interface Skill {
+  name: string;
+  level: number;
+}
+
 interface SkillCategory {
   category: string;
-  items: string[];
+  items: Skill[];
 }
 
 @Component({

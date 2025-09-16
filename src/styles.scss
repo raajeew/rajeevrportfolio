@@ -9,17 +9,90 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-// Global Variables
+// Theme CSS Custom Properties
 :root {
+  // Light theme colors (default)
+  --theme-bg-primary: #ffffff;
+  --theme-bg-secondary: #f8f9fa;
+  --theme-bg-tertiary: #e9ecef;
+  --theme-text-primary: #212529;
+  --theme-text-secondary: #6c757d;
+  --theme-text-muted: #adb5bd;
+  --theme-border-color: #dee2e6;
+  --theme-border-subtle: rgba(0, 0, 0, 0.125);
+  --theme-shadow: rgba(0, 0, 0, 0.1);
+  --theme-shadow-lg: rgba(0, 0, 0, 0.15);
+  
+  // Brand colors
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --warning-color: #ffc107;
   --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+  --purple-color: #6f42c1;
+  
+  // Typography
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  
+  // Navbar specific
+  --navbar-bg: #ffffff;
+  --navbar-brand-color: #212529;
+  --navbar-link-color: #6c757d;
+  --navbar-link-hover: #212529;
+  --navbar-toggler-color: #212529;
+  --navbar-toggler-filter: none;
+  
+  // Card styles
+  --card-bg: #ffffff;
+  --card-border: #dee2e6;
+  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  
+  // Form elements
+  --input-bg: #ffffff;
+  --input-border: #dee2e6;
+  --input-text: #212529;
+  --input-placeholder: #6c757d;
+}
+
+// Dark theme colors
+[data-theme="dark"] {
+  --theme-bg-primary: #121212;
+  --theme-bg-secondary: #1e1e1e;
+  --theme-bg-tertiary: #2d2d2d;
+  --theme-text-primary: #ffffff;
+  --theme-text-secondary: #b3b3b3;
+  --theme-text-muted: #8a8a8a;
+  --theme-border-color: #404040;
+  --theme-border-subtle: rgba(255, 255, 255, 0.125);
+  --theme-shadow: rgba(0, 0, 0, 0.3);
+  --theme-shadow-lg: rgba(0, 0, 0, 0.5);
+  
+  // Navbar dark theme
+  --navbar-bg: #1e1e1e;
+  --navbar-brand-color: #ffffff;
+  --navbar-link-color: #b3b3b3;
+  --navbar-link-hover: #ffffff;
+  --navbar-toggler-color: #ffffff;
+  --navbar-toggler-filter: invert(1);
+  
+  // Card dark theme
+  --card-bg: #1e1e1e;
+  --card-border: #404040;
+  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  // Form elements dark theme
+  --input-bg: #2d2d2d;
+  --input-border: #404040;
+  --input-text: #ffffff;
+  --input-placeholder: #8a8a8a;
+  
+  // Enhanced card visibility
+  .card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+    color: var(--theme-text-primary) !important;
+  }
 }
 
 // Global Styles
@@ -36,9 +109,10 @@ html {
 body {
   font-family: var(--font-family);
   line-height: 1.6;
-  color: #333;
-  background-color: #ffffff;
+  color: var(--theme-text-primary);
+  background-color: var(--theme-bg-primary);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 // Custom scrollbar
@@ -47,16 +121,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #2c2c2c;
+  background: var(--theme-bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: var(--theme-text-muted);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #777;
+  background: var(--theme-text-secondary);
 }
 
 // Typography
@@ -93,10 +167,25 @@ a:hover {
 
 // Card Styles
 .card {
-  border: none;
+  border: 1px solid var(--card-border);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background-color: var(--card-bg);
+  color: var(--theme-text-primary);
+  box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
+  
+  // Override Bootstrap's border-0 class in dark theme
+  &.border-0 {
+    border: 1px solid var(--card-border) !important;
+  }
+  
+  .card-title {
+    color: var(--theme-text-primary);
+  }
+  
+  .card-text {
+    color: var(--theme-text-secondary);
+  }
 }
 
 // Badge Styles
@@ -115,11 +204,19 @@ a:hover {
 // Form Styles
 .form-control {
   border-radius: 8px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--input-text);
   transition: all 0.3s ease;
+  
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
   
   &:focus {
     border-color: var(--primary-color);
+    background-color: var(--input-bg);
+    color: var(--input-text);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
   }
 }
